@@ -1,0 +1,126 @@
+/* add a clock */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Shadows Into Light', cursive;
+    background-color: lightgray;
+    background-image: url(https://source.unsplash.com/1600x900/?places);
+}
+
+.home {
+    background-color: rgb(100, 100, 100);
+    color: black;
+    opacity: 0.9;
+    padding: 1em;
+    border-radius: 50px;
+    width: 400px;
+    height: 400px;
+    margin: 1em 0;
+}
+
+.card {
+    background-color: rgb(2, 2, 2);
+    color: aliceblue;
+    opacity: 0.9;
+    padding: 1em;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    padding: 2px;
+}
+
+button {
+    margin: .5em;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    padding: .75em;
+    background-color: grey;
+    cursor: pointer;
+    transition: .35s ease;
+}
+
+button:hover {
+    background-color: white;
+}
+
+input.searchbar {
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #d3d3d3;
+    font-family: inherit;
+    font-size: 120%;
+    font-weight: 900;
+    text-indent: 5px;
+    transition: .35s ease;
+    width: 80%;
+}
+
+input.searchbar:hover {
+    background-color: white;
+}
+
+.weatherReport {
+    font-size: 150%;
+}
+
+.city {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h1.temperature {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.descriptionLine {
+    display: flex;
+    align-items: center;
+}
+
+.weatherReport.loading {
+    visibility: hidden;
+}
+
+.weatherReport.loading:after {
+    visibility: visible;
+    content: "Loading";
+    color: aliceblue;
+}
+
+.hcity {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h1.htemperature {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.hdescriptionLine {
+    display: flex;
+    align-items: center;
+}
+
+.hweatherReport {
+    font-family: inherit;
+    font-size: 160%;
+    font-weight: 900;
+}
